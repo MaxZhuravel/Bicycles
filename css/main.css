@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  color: #848789;
+  font-size: 18px;
+}
+
+.header {
+  background: url(../img/intro-bg.png) center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  padding-top: 35px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4d4959;
+}
+.menu__item {
+  padding: 15px;
+}
+.menu__item a {
+  color: #4d4959;
+}
+.menu__logo {
+  padding: 33px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .container {
+    margin: 0 10px;
+  }
+}
+.container__generation {
+  padding: 117px 0 142px;
+}
+.container__twiter {
+  padding: 124px 0 68px;
+}
+.container__footer {
+  padding: 99px 0 103px;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  color: #353738;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  line-height: 34px;
+}
+
+.generation {
+  background: #f7f7f7;
+}
+.generation__subtitle {
+  text-align: center;
+  padding: 0 10px;
+}
+.generation__logo {
+  margin-bottom: 30px;
+}
+.generation__title {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 200px);
+}
+@media (max-width: 1092px) {
+  .gallery {
+    display: block;
+  }
+}
+.gallery__company {
+  background: url(../img/bike-1.jpg) center/cover;
+  position: relative;
+}
+@media (max-width: 1092px) {
+  .gallery__company {
+    height: 500px;
+  }
+}
+.gallery__company::after {
+  content: "";
+  position: absolute;
+  background: url(../img/Logo-bike.svg) no-repeat center;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1092px) {
+  .gallery__bike-sit {
+    height: 300px;
+  }
+}
+.gallery__bike-sit_first {
+  background: url(../img/bike-2.jpg) center/cover;
+}
+.gallery__bike-sit_second {
+  background: url(../img/bike-3.jpg) center/cover;
+}
+.gallery__vintage {
+  background: url(../img/bike-4.jpg) center/cover;
+  position: relative;
+}
+@media (max-width: 1092px) {
+  .gallery__vintage {
+    height: 500px;
+  }
+}
+.gallery__vintage::after {
+  content: "";
+  position: absolute;
+  background: url(../img/Logo-vintage.svg) no-repeat center;
+  width: 100%;
+  height: 100%;
+}
+.gallery__since {
+  background: url(../img/bike-5.jpg) center/cover;
+  position: relative;
+}
+@media (max-width: 1092px) {
+  .gallery__since {
+    height: 500px;
+  }
+}
+.gallery__since::after {
+  content: "";
+  position: absolute;
+  background: url(../img/Logo-bicycles.svg) no-repeat center;
+  width: 100%;
+  height: 100%;
+}
+.gallery__bike-circle {
+  background: url(../img/bike-6.jpg) center/cover;
+}
+@media (max-width: 1092px) {
+  .gallery__bike-circle {
+    height: 300px;
+  }
+}
+.gallery__bike {
+  background: url(../img/bike-7.jpg) center/cover;
+}
+@media (max-width: 1092px) {
+  .gallery__bike {
+    height: 300px;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  justify-content: center;
+}
+@media (max-width: 1092px) {
+  .text {
+    padding: 5% 10%;
+  }
+}
+.text__logo {
+  margin-bottom: 30px;
+}
+.text__title {
+  margin-bottom: 23px;
+}
+
+.large {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.medium {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.xmedium {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.twiter {
+  background: #f7f7f7;
+}
+.twiter__logo {
+  margin-bottom: 35px;
+}
+.twiter__title {
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+.twiter__title span {
+  font-weight: 700;
+  color: #353738;
+}
+.twiter__text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.switcher {
+  display: flex;
+}
+
+.point {
+  margin: 0 4.5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+}
+.point_active {
+  border: none;
+  background: #a9afb3;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 267px);
+}
+.shop_1 {
+  background: url(../img/shop-1.jpg) center/cover;
+}
+.shop_2 {
+  background: url(../img/shop-2.jpg) center/cover;
+}
+.shop_3 {
+  background: url(../img/shop-3.jpg) center/cover;
+}
+.shop_4 {
+  background: url(../img/shop-4.jpg) center/cover;
+}
+.shop_5 {
+  background: url(../img/shop_now.png) no-repeat center, url(../img/shop-5-bg.png), url(../img/shop-5.png) center/cover;
+}
+.shop_6 {
+  background: url(../img/shop-6.jpg) center/cover;
+}
+.shop_7 {
+  background: url(../img/shop-7.jpg) center/cover;
+}
+.shop_8 {
+  background: url(../img/shop-8.jpg) center/cover;
+}
+.shop__big-x {
+  grid-column: span 2;
+}
+.shop__big-y {
+  grid-row: span 2;
+}
+
+.discover {
+  background: #282f35;
+  display: flex;
+  justify-content: center;
+}
+.discover__button {
+  margin: 75px auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 50px;
+}
+.discover__button a {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  line-height: 50px;
+  padding: 0 57px;
+}
+
+.form {
+  padding: 109px 0 111px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form__logo {
+  margin-bottom: 39px;
+}
+.form__text {
+  margin-bottom: 35px;
+}
+.form form {
+  display: flex;
+}
+
+.italic-subtitle {
+  font-style: italic;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.input {
+  border: 1px solid #d3d7d9;
+  height: 69px;
+  width: 400px;
+  padding: 0 28px;
+  margin: 0 4px;
+}
+.input::-moz-placeholder {
+  color: #cecece;
+  font-style: italic;
+  font-size: 20px;
+}
+.input::placeholder {
+  color: #cecece;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.submit {
+  width: 126px;
+  height: 69px;
+  background: #64c29e;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 4px;
+}
+
+.footer {
+  background: #f7f7f7;
+}
+.footer__address {
+  flex: 0 0 33.3333%;
+}
+.footer__address p {
+  font-size: 14px;
+  font-style: italic;
+}
+.footer__address p:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 33.3333%;
+}
+.footer__icons img {
+  padding: 0 7.5px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 0 0 33.3333%;
+}
+.footer__logo p {
+  padding-right: 9px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.example {
+  display: grid;
+  height: 100px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.example__first {
+  background-color: red;
+}
+.example__second {
+  background-color: green;
+}
+.example__third {
+  background: blue;
+}/*# sourceMappingURL=main.css.map */

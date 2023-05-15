@@ -1,0 +1,360 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  font-family: $font-family;
+  color: $font-color1;
+  font-size: 18px;
+}
+
+.header {
+  background: url(../img/intro-bg.png) center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  padding-top: 35px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4d4959;
+  &__item {
+    padding: 15px;
+    a {
+      color: #4d4959;
+    }
+  }
+  &__logo {
+    padding: 33px;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 1100px) {
+    margin: 0 10px;
+  }
+  &__generation {
+    padding: 117px 0 142px;
+  }
+  &__twiter {
+    padding: 124px 0 68px;
+  }
+  &__footer {
+    padding: 99px 0 103px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.title {
+  color: $font-color2;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.subtitle {
+  line-height: 34px;
+}
+
+.generation {
+  background: $background;
+  &__subtitle {
+    text-align: center;
+    padding: 0 10px;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 200px);
+  @media (max-width: 1092px) {
+    display: block;
+  }
+  &__company {
+    background: url(../img/bike-1.jpg) center / cover;
+    position: relative;
+    @media (max-width: 1092px) {
+      height: 500px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(../img/Logo-bike.svg) no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__bike-sit {
+    @media (max-width: 1092px) {
+      height: 300px;
+    }
+    &_first {
+      background: url(../img/bike-2.jpg) center / cover;
+    }
+    &_second {
+      background: url(../img/bike-3.jpg) center / cover;
+    }
+  }
+  &__vintage {
+    background: url(../img/bike-4.jpg) center / cover;
+    position: relative;
+    @media (max-width: 1092px) {
+      height: 500px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(../img/Logo-vintage.svg) no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__since {
+    @media (max-width: 1092px) {
+      height: 500px;
+    }
+    background: url(../img/bike-5.jpg) center / cover;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(../img/Logo-bicycles.svg) no-repeat center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__bike-circle {
+    background: url(../img/bike-6.jpg) center / cover;
+    @media (max-width: 1092px) {
+      height: 300px;
+    }
+  }
+  &__bike {
+    background: url(../img/bike-7.jpg) center / cover;
+    @media (max-width: 1092px) {
+      height: 300px;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  justify-content: center;
+  @media (max-width: 1092px) {
+    padding: 5% 10%;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 23px;
+  }
+}
+
+.large {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.medium {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.xmedium {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.twiter {
+  background: $background;
+  &__logo {
+    margin-bottom: 35px;
+  }
+  &__title {
+    font-weight: 300;
+    margin-bottom: 27px;
+    span {
+      font-weight: 700;
+      color: #353738;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+.switcher {
+  display: flex;
+}
+.point {
+  margin: 0 4.5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+  &_active {
+    border: none;
+    background: #a9afb3;
+  }
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 267px);
+  &_1 {
+    background: url(../img/shop-1.jpg) center / cover;
+  }
+  &_2 {
+    background: url(../img/shop-2.jpg) center / cover;
+  }
+  &_3 {
+    background: url(../img/shop-3.jpg) center / cover;
+  }
+  &_4 {
+    background: url(../img/shop-4.jpg) center / cover;
+  }
+  &_5 {
+    background: url(../img/shop_now.png) no-repeat center,
+      url(../img/shop-5-bg.png), url(../img/shop-5.png) center / cover;
+  }
+  &_6 {
+    background: url(../img/shop-6.jpg) center / cover;
+  }
+  &_7 {
+    background: url(../img/shop-7.jpg) center / cover;
+  }
+  &_8 {
+    background: url(../img/shop-8.jpg) center / cover;
+  }
+  &__big-x {
+    grid-column: span 2;
+  }
+  &__big-y {
+    grid-row: span 2;
+  }
+}
+
+.discover {
+  background: #282f35;
+  display: flex;
+  justify-content: center;
+  &__button {
+    margin: 75px auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
+    a {
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      line-height: 50px;
+      padding: 0 57px;
+    }
+  }
+}
+
+.form {
+  padding: 109px 0 111px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__logo {
+    margin-bottom: 39px;
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  form {
+    display: flex;
+  }
+}
+
+.italic-subtitle {
+  font-style: italic;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.input {
+  border: 1px solid #d3d7d9;
+  height: 69px;
+  width: 400px;
+  padding: 0 28px;
+  margin: 0 4px;
+  &::placeholder {
+    color: $placeholder-color;
+    font-style: italic;
+    font-size: 20px;
+  }
+}
+.submit {
+  width: 126px;
+  height: 69px;
+  background: $button-color;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 4px;
+}
+
+.footer {
+  background: $background;
+  &__address {
+    flex: 0 0 33.3333%;
+    p {
+      font-size: 14px;
+      font-style: italic;
+      &:first-child {
+        font-weight: 700;
+        font-size: 16px;
+        font-style: normal;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 33.3333%;
+    img {
+      padding: 0 7.5px;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex: 0 0 33.3333%;
+    p {
+      padding-right: 9px;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+}
